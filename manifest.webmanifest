@@ -1,12 +1,12 @@
 {
-  "name": "Guide Anims — Made in Japan",
-  "short_name": "Guide Anims",
-  "description": "Guide de l'animateur pour la colo Japon (Verdié Hello 2026) : programme jour par jour, missions, régie, phrases utiles. Fonctionne hors connexion.",
+  "name": "Japan'App 2026 — Guide Anims",
+  "short_name": "JP'App Anims",
+  "description": "Guide de l'animateur — séjour Japan'App 2026 de Verdié Hello : programme jour par jour, missions, régie, phrases utiles. Fonctionne hors connexion.",
   "lang": "fr",
   "dir": "ltr",
   "start_url": ".",
   "scope": ".",
-  "id": "guide-anims-made-in-japan",
+  "id": "japanapp-2026-anims",
   "display": "standalone",
   "display_override": ["standalone", "fullscreen", "minimal-ui"],
   "orientation": "portrait",
@@ -14,29 +14,9 @@
   "theme_color": "#0b0e1a",
   "categories": ["travel", "education", "reference"],
   "icons": [
-    {
-      "src": "icons/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-192-maskable.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "icons/icon-512-maskable.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
-    }
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-192-maskable.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
   ]
 }
