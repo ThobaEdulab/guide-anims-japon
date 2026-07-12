@@ -22,7 +22,7 @@
 'use strict';
 
 const APP_PREFIX = 'jpapp-anims-';   // namespace propre à ce guide (Anims)
-const VERSION = 'v4.0.0';
+const VERSION = 'v4.1.0';
 const CACHE_NAME = APP_PREFIX + VERSION;
 
 /* GIF 1×1 transparent : réponse de repli pour les liaisons de template non
