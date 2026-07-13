@@ -84,8 +84,11 @@
   function frShort(iso) { var p = iso.split('-'); return p[2] + '/' + p[1]; }   // AAAA-MM-JJ -> JJ/MM
   function getVal(key) {
     return fetch('https://abacus.jasoncameron.dev/get/' + NS + '/' + key, { cache: 'no-store' })
-      .then(function (r) { return r.ok ? r.json() : { value: 0 }; })            // 404 = jamais utilisé = 0
-      .then(function (d) { return (d && typeof d.value === 'number') ? d.value : 0; })
+      .then(function (r) {
+        if (r.status === 404) return 0;                  // clé jamais utilisée = 0 réel
+        if (!r.ok) throw new Error('http ' + r.status);  // souci passager du service -> « — »
+        return r.json().then(function (d) { return (d && typeof d.value === 'number') ? d.value : 0; });
+      })
       .catch(function () { return null; });                                     // null = erreur réseau
   }
   function show(el, v) { el.textContent = (v === null) ? '—' : v; }
